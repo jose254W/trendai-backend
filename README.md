@@ -27,23 +27,27 @@ Copy
 Edit
 npm run start
 The API will be available at http://localhost:5000
+
 🛠 API Endpoints
 🔐 Authentication (JWT)
 Method	Endpoint	Description
 POST	/auth/signup	Register a new user
 POST	/auth/login	Authenticate and get JWT token
+
 📢 Campaigns
 Method	Endpoint	Description
 GET	/campaigns	Get all campaigns
 POST	/campaigns	Create a new campaign (admin only)
 PATCH	/campaigns/:campaignId	Update a campaign
 DELETE	/campaigns/:campaignId	Delete a campaign
+
 📩 Submissions
 Method	Endpoint	Description
 POST	/submissions	Submit content for a campaign
 GET	/submissions/performance	Get performance metrics
 GET	/submissions/campaign/:campaignId	Get all submissions for a campaign
 PATCH	/submissions/:submissionId	Approve/reject a submission
+
 🔒 Authentication (JWT Guard)
 This project uses JWT authentication to protect API routes.
 To make authenticated requests, include the token in the headers:
@@ -52,6 +56,7 @@ sh
 Copy
 Edit
 Authorization: Bearer your_jwt_token
+
 🐳 Running with Docker (Optional)
 If you want to run the backend in a Docker container, use:
 
